@@ -1,9 +1,10 @@
 {
   "name": "portmat-accommodation-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend service for Portmat Accommodation",
   "main": "mainModule.js",
   "scripts": {
+    "start": "node mainModule.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
