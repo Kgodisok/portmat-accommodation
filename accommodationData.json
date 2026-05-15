@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "roomType": "Single",
+    "province": "Gauteng",
+    "city": "Pretoria",
+    "townShip": "Mamelodi",
+    "pricePerMonth": 2500.50,
+    "isAvailable": true,
+    "amenities": ["Electricity", "Water", "Wi-Fi"],
+    "dateAdded": "2026-05-15"
+  },
+  {
+    "id": 2,
+    "roomType": "Double",
+    "province": "Gauteng",
+    "city": "Johannesburg",
+    "townShip": "Thembisa",
+    "pricePerMonth": 3200.00,
+    "isAvailable": false,
+    "amenities": ["Electricity", "Water", "Parking"],
+    "dateAdded": "2026-05-10"
+  },
+  {
+    "id": 3,
+    "roomType": "Bachelor",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "townShip": "Khayelitsha",
+    "pricePerMonth": 4000.00,
+    "isAvailable": true,
+    "amenities": ["Water", "Wi-Fi", "Security"],
+    "dateAdded": "2026-05-14"
+  },
+  {
+    "id": 4,
+    "roomType": "Single",
+    "province": "KwaZulu-Natal",
+    "city": "Durban",
+    "townShip": "Umlazi",
+    "pricePerMonth": 1800.75,
+    "isAvailable": true,
+    "amenities": ["Electricity", "Water"],
+    "dateAdded": "2026-04-28"
+  },
+  {
+    "id": 5,
+    "roomType": "Sharing",
+    "province": "Gauteng",
+    "city": "Pretoria",
+    "townShip": "Hatfield",
+    "pricePerMonth": 2900.00,
+    "isAvailable": false,
+    "amenities": ["Electricity", "Water", "Wi-Fi", "Gym"],
+    "dateAdded": "2026-05-01"
+  }
+]
