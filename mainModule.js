@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 });
 
 // List all accommodations
-app.get('/portmat/accommodations', (req, res) => {
+app.get('/accommodations', (req, res) => {
   res.json(localData);
 });
 
