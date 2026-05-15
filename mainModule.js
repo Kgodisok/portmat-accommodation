@@ -33,7 +33,7 @@ function saveData(data) {
 let localData = loadData();
 
 app.get('/', (req, res) => {
-  res.json({ status: 'ok', endpoints: ['/portmat/accommodations'] });
+  res.json({ status: 'ok', endpoints: ['/accommodations'] });
 });
 
 // List all accommodations
@@ -42,7 +42,7 @@ app.get('/accommodations', (req, res) => {
 });
 
 // Get by id
-app.get('/portmat/accommodations/:id', (req, res) => {
+app.get('/accommodations/:id', (req, res) => {
   const id = req.params.id;
   const item = localData.find(a => String(a.id) === String(id));
   if (!item) return res.status(404).json({ error: 'Not found' });
@@ -50,7 +50,7 @@ app.get('/portmat/accommodations/:id', (req, res) => {
 });
 
 // Create
-app.post('/portmat/accommodations', (req, res) => {
+app.post('/accommodations', (req, res) => {
   const body = req.body;
   if (!body) return res.status(400).json({ error: 'Missing body' });
   const maxId = localData.reduce((m, i) => (i.id && i.id > m ? i.id : m), 0);
@@ -65,7 +65,7 @@ app.post('/portmat/accommodations', (req, res) => {
 });
 
 // Update
-app.put('/portmat/accommodations/:id', (req, res) => {
+app.put('/accommodations/:id', (req, res) => {
   const id = req.params.id;
   const idx = localData.findIndex(a => String(a.id) === String(id));
   if (idx === -1) return res.status(404).json({ error: 'Not found' });
@@ -79,7 +79,7 @@ app.put('/portmat/accommodations/:id', (req, res) => {
 });
 
 // Delete
-app.delete('/portmat/accommodations/:id', (req, res) => {
+app.delete('/accommodations/:id', (req, res) => {
   const id = req.params.id;
   const idx = localData.findIndex(a => String(a.id) === String(id));
   if (idx === -1) return res.status(404).json({ error: 'Not found' });
